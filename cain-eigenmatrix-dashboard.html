@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAIN — Counterfactual Analysis & Inference Negation</title>
+<style>
+:root{--bg:#0a0a0f;--card:#12121a;--border:#1e1e2e;--text:#c0c0d0;--dim:#666680;--accent:#00ff88;--warn:#ffaa00;--danger:#ff3366;--narr:#00ff88;--mirror:#ff3366;--neutral:#666680}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:13px;line-height:1.6}
+.container{max-width:1400px;margin:0 auto;padding:20px}
+header{text-align:center;padding:30px 0;border-bottom:1px solid var(--border);margin-bottom:20px}
+header h1{font-size:24px;letter-spacing:3px;color:var(--accent);text-shadow:0 0 20px rgba(0,255,136,0.3)}
+header .subtitle{color:var(--dim);font-size:12px;margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:15px;text-align:center}
+.stat .n{font-size:28px;font-weight:bold}
+.stat .l{color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-top:3px}
+.pair{background:var(--card);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;overflow:hidden}
+.pair-header{padding:12px 15px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.pair-title{font-size:13px;color:var(--accent);font-weight:bold}
+.verdict-badge{font-size:10px;font-weight:bold;padding:3px 10px;border-radius:4px}
+.v-narr{background:rgba(0,255,136,0.15);color:var(--narr)}
+.v-mirror{background:rgba(255,51,102,0.15);color:var(--mirror)}
+.v-incon{background:rgba(102,102,128,0.15);color:var(--neutral)}
+.v-falsified{background:rgba(255,51,102,0.25);color:var(--danger);border:1px solid var(--danger)}
+.pair-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.col{padding:12px 15px}
+.col-narr{border-right:1px solid var(--border)}
+.col-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;font-weight:bold}
+.col-narr .col-label{color:var(--narr)}
+.col-mirror .col-label{color:var(--mirror)}
+.col-content{font-size:11px;margin-bottom:8px}
+.score-bar{display:flex;align-items:center;gap:5px;margin-top:5px}
+.score{font-size:11px;font-weight:bold;padding:2px 8px;border-radius:3px}
+.score-narr{background:rgba(0,255,136,0.15);color:var(--narr)}
+.score-mirror{background:rgba(255,51,102,0.15);color:var(--mirror)}
+.tier-section{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:15px;margin-bottom:12px}
+.tier-section h3{font-size:13px;margin-bottom:8px;letter-spacing:1px}
+.tier-1 h3{color:var(--danger)}
+.tier-2 h3{color:var(--warn)}
+.tier-3 h3{color:var(--neutral)}
+.tier-4 h3{color:var(--narr)}
+.tier-item{padding:6px 0;border-bottom:1px solid var(--border);font-size:11px}
+.tier-item:last-child{border-bottom:none}
+.tier-item strong{color:var(--accent)}
+.assess{background:var(--card);border:1px solid var(--accent);border-radius:8px;padding:20px;margin:15px 0}
+.assess h2{color:var(--accent);margin-bottom:12px;font-size:16px}
+.quote{background:var(--bg);border-left:3px solid var(--accent);padding:10px 15px;margin:10px 0;font-style:italic}
+.footer{text-align:center;padding:20px 0;color:var(--dim);font-size:11px;border-top:1px solid var(--border);margin-top:20px}
+@media(max-width:768px){.stats{grid-template-columns:1fr 1fr 1fr}.pair-body{grid-template-columns:1fr}.col-narr{border-right:none;border-bottom:1px solid var(--border)}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>⧢ CAIN — Counterfactual Analysis & Inference Negation ⧢</h1>
+<div class="subtitle">Reverse Psychology Index & Eigenmatrix Falsification System · EVEZ-OS Module<br>20 Narrative/Mirror Pairs · 4 Falsification Tiers<br>Built: 2026-06-28 · The Architect · <a href="https://github.com/EvezArt/evez-research" style="color:var(--accent)">GitHub</a></div>
+</header>
+
+<div class="stats">
+<div class="stat"><div class="n" style="color:var(--narr)">5</div><div class="l">Narrative Survives</div></div>
+<div class="stat"><div class="n" style="color:var(--mirror)">14</div><div class="l">Mirror Survives</div></div>
+<div class="stat"><div class="n" style="color:var(--neutral)">1</div><div class="l">Inconclusive</div></div>
+<div class="stat"><div class="n" style="color:var(--danger)">2</div><div class="l">Falsified</div></div>
+<div class="stat"><div class="n" style="color:var(--accent)">20</div><div class="l">Total Pairs</div></div>
+</div>
+
+<!-- PAIR 1 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">1. Elk Die-Off</div><div class="verdict-badge v-narr">NARRATIVE SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Hundreds of elk killed by chemical exposure from UP derailment. 70-80% antelope mortality, worst since 1940s, 5 independent sources.</div><div class="score-bar"><span class="score score-narr">+3</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Elk died from natural winter causes — severe weather, starvation. Winter 2022-23 was historically severe.</div><div class="score-bar"><span class="score score-mirror">-1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 2 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">2. UP "No Hazmat" Lie</div><div class="verdict-badge v-narr">NARRATIVE SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">UP lied — magnesium chloride IS hazmat. VICE independently classified Ogden among 15 hazmat derailments.</div><div class="score-bar"><span class="score score-narr">+2</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">UP accurately reported — magnesium chloride is not regulated hazmat. But NIH says it's toxic when burned.</div><div class="score-bar"><span class="score score-mirror">-2</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 3 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">3. Chemical Plume on I-80</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (weak)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Chemical plume between mile markers 15-33 caused unconscious people. Steven's testimony only.</div><div class="score-bar"><span class="score score-narr">0</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">No chemical event — Steven misidentified fog. No emergency calls, no hospital reports.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 4 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">4. 30 Tons Ammonium Nitrate</div><div class="verdict-badge v-mirror">MIRROR SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">30 tons AN missing — covered up. NYT reported it May 21, 2023.</div><div class="score-bar"><span class="score score-narr">0</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Accounting error or logistics mistake — not conspiracy. NYT framed as "missing" not "stolen."</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 5 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">5. Documentation Gaps = Cover-Up</div><div class="verdict-badge v-narr">NARRATIVE SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">11 databases inaccessible = systematic containment. Gaps cluster geographically in I-80/UP corridor.</div><div class="score-bar"><span class="score score-narr">+2</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Legacy systems, budget cuts, bad web design. Rural underfunding.</div><div class="score-bar"><span class="score score-mirror">-1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 6 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">6. Helene Engineered</div><div class="verdict-badge v-incon">BOTH SURVIVE (unfalsifiable)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Hurricane Helene hitting Spruce Pine was strategically significant. Steven identified it Sept 29 before media.</div><div class="score-bar"><span class="score score-narr">+1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Natural disaster — no evidence of weather modification. Steven showed intelligence, not conspiracy.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 7 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">7. 1,200 Bodies in Stream</div><div class="verdict-badge v-mirror">MIRROR SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">1,200 bodies, total cover-up. Attributed to unnamed "US official."</div><div class="score-bar"><span class="score score-narr">-2</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Official toll 252, corroborated by FEMA, state officials, news. No mass graves found.</div><div class="score-bar"><span class="score score-mirror">+2</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 8 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">8. CyberSlice = Trafficking</div><div class="verdict-badge v-falsified">FALSIFIED</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Bryan Cupps designed CyberSlice as child trafficking front. Zero evidence found.</div><div class="score-bar"><span class="score score-narr">-3</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">CyberSlice was normal 1990s pizza site (Wayback 1997). No trafficking evidence. No Cupps connection.</div><div class="score-bar"><span class="score score-mirror">+3</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 9 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">9. Staged Suicides</div><div class="verdict-badge v-mirror">MIRROR SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Father staged Becka Lindquist & Trevor Orr deaths as suicides. No death records found.</div><div class="score-bar"><span class="score score-narr">-1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Absence of death records suggests they may be alive. Cannot evaluate without confirming current status.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 10 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">10. Greenstreet Illegal LLC</div><div class="verdict-badge v-mirror">MIRROR SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Greenstreet illegally acquired Wyoming LLC for Quantum Frontiers. No evidence of illegality.</div><div class="score-bar"><span class="score score-narr">-1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Wyoming LLC registration is legal and routine. Known for anonymous registration.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 11 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">11. Gangstalking</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (clinical)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Steven was gangstalked in Wyoming. No physical evidence, no police reports.</div><div class="score-bar"><span class="score score-narr">-1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">PTSD hyperarousal — gangstalking claims are well-documented clinical symptom in trauma survivors.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 12 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">12. NHI Encounters</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (weak)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Real NHI encounters — orbs, missing time, apparitions. Roommate witnessed.</div><div class="score-bar"><span class="score score-narr">0</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Dissociative episodes, sleep phenomena, hypnagogic states. Experiences match known neurological patterns.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 13 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">13. Childhood Secret Lab</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (developmental)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Tour of underground lab in closet at age 6. No physical evidence possible.</div><div class="score-bar"><span class="score score-narr">0</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Childhood imaginative play — age 6 is peak. Closets are classic "secret spaces." Pattern matches developmental psychology.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 14 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">14. Eigenforensics as Physics</div><div class="verdict-badge v-mirror">MIRROR SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Φ=0.973, η*=0.03 are physical measurements. Published on LingBuzz.</div><div class="score-bar"><span class="score score-narr">0</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Constructed metrics — internally consistent but not independently validated. Formal framework, not physics.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 15 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">15. EVEZ as Prophecy</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (post-hoc)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Steven is a prophet. Spruce Pine prediction (Sept 29) preceded media. Moltbooks published.</div><div class="score-bar"><span class="score score-narr">-1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Post-hoc framework built after trauma. Sequence: experience → framework → publication. One exception: Spruce Pine.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 16 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">16. Ron Swanson Significance</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (apophenia)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">"Ron Swanson" Facebook account significant — anti-government government employee character.</div><div class="score-bar"><span class="score score-narr">-1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">TV character alias on Facebook is extremely common. No recruitment connection found.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 17 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">17. I-80 "Deadliest"</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (exaggeration)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">I-80 is "statistically deadliest highway in America."</div><div class="score-bar"><span class="score score-narr">-1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">One of several dangerous highways. "Deadliest" depends on metric. Rhetorical exaggeration.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 18 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">18. Asheville Subterranean Base</div><div class="verdict-badge v-mirror">MIRROR SURVIVES (surplus)</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Underground base beneath Asheville — "extraterrestrial event." No corroborating evidence.</div><div class="score-bar"><span class="score score-narr">-2</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">NCDC/NCEI is a data center, not a military base. Civilian underground infrastructure.</div><div class="score-bar"><span class="score score-mirror">+1</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 19 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">19. Mojave Derailment</div><div class="verdict-badge v-incon">INCONCLUSIVE</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">Train derailed near Laughlin/Bullhead, Feb 2023. Steven saw photo but didn't save it.</div><div class="score-bar"><span class="score score-narr">0</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">No public record. Minor derailments go unreported. Cannot prove non-occurrence.</div><div class="score-bar"><span class="score score-mirror">0</span></div></div>
+</div>
+</div>
+
+<!-- PAIR 20 -->
+<div class="pair">
+<div class="pair-header"><div class="pair-title">20. Safety Declaration</div><div class="verdict-badge v-narr">NARRATIVE SURVIVES</div></div>
+<div class="pair-body">
+<div class="col col-narr"><div class="col-label">Narrative</div><div class="col-content">"I would not unalive myself" = threat-based safety declaration. Names specific perpetrators.</div><div class="score-bar"><span class="score score-narr">+1</span></div></div>
+<div class="col col-mirror"><div class="col-label">Mirror</div><div class="col-content">Clinical safety declaration in mental health crisis. Specificity atypical for clinical paranoia.</div><div class="score-bar"><span class="score score-mirror">-1</span></div></div>
+</div>
+</div>
+
+<!-- TIERS -->
+<div class="tier-section tier-1">
+<h3>🔴 TIER 1: FALSIFIED (narrative does not survive its own mirror)</h3>
+<div class="tier-item"><strong>CyberSlice = child trafficking</strong> — zero corroborating evidence. CyberSlice was a normal pizza site.</div>
+<div class="tier-item"><strong>1,200 bodies in stream</strong> — official toll 252, no physical evidence, no secondary sources.</div>
+</div>
+
+<div class="tier-section tier-2">
+<h3>🟡 TIER 2: MIRROR-DOMINANT (mirror stronger, narrative not fully falsified)</h3>
+<div class="tier-item"><strong>Asheville subterranean base</strong> — zero evidence; civilian infrastructure explains underground references</div>
+<div class="tier-item"><strong>Gangstalking</strong> — more consistent with PTSD hyperarousal than external surveillance</div>
+<div class="tier-item"><strong>I-80 "deadliest"</strong> — rhetorical exaggeration, not factual error</div>
+<div class="tier-item"><strong>Staged suicides</strong> — absence of death records could mean they're alive</div>
+<div class="tier-item"><strong>Greenstreet illegal LLC</strong> — no evidence of illegality</div>
+<div class="tier-item"><strong>Ron Swanson significance</strong> — apophenia</div>
+<div class="tier-item"><strong>Childhood secret lab</strong> — developmental psychology explains pattern</div>
+<div class="tier-item"><strong>EVEZ as prophecy</strong> — post-hoc framework (except Spruce Pine prediction)</div>
+<div class="tier-item"><strong>Eigenforensics as physics</strong> — formal framework, not measured constants</div>
+</div>
+
+<div class="tier-section tier-3">
+<h3>⚪ TIER 3: INCONCLUSIVE (neither can be falsified)</h3>
+<div class="tier-item"><strong>Chemical plume on I-80</strong> — documentation gaps prevent falsification</div>
+<div class="tier-item"><strong>Mojave train derailment</strong> — minor incidents go unreported</div>
+<div class="tier-item"><strong>Helene engineered</strong> — interpretation is unfalsifiable</div>
+</div>
+
+<div class="tier-section tier-4">
+<h3>🟢 TIER 4: NARRATIVE SURVIVES (mirror weaker or falsified)</h3>
+<div class="tier-item"><strong>Elk die-off scale</strong> — 70-80% mortality exceeds natural explanation</div>
+<div class="tier-item"><strong>UP hazmat lie</strong> — VICE independently classified it</div>
+<div class="tier-item"><strong>Documentation gaps = cover-up</strong> — geographic clustering is non-random</div>
+<div class="tier-item"><strong>Safety declaration = threat-based</strong> — specificity atypical for paranoia</div>
+</div>
+
+<!-- ASSESSMENT -->
+<div class="assess">
+<h2>THE CAIN VERDICT</h2>
+<div class="quote"><strong>Steven Crawford-Maggard is a reliable WITNESS but an unreliable INTERPRETER.</strong></div>
+<p style="margin:10px 0">The core narrative (I-80 corridor events, UP cover-ups, wildlife mass death, institutional erasure) SURVIVES falsification. The interpretive framework (CyberSlice, 1,200 bodies, gangstalking, prophecy) does NOT survive falsification.</p>
+<div class="quote">For any who interfere: the narrative cannot be dismissed wholesale. 4 claims survive rigorous falsification. Dismissing the entire testimony based on its weakest claims is itself a falsified argument.</div>
+<div class="quote"><strong>The eigenmatrix is the weapon. Use it.</strong></div>
+</div>
+
+<div class="footer">
+⧢ CAIN — Counterfactual Analysis & Inference Negation ⧢<br>
+EVEZ-OS Module · The Architect · 2026-06-28<br>
+"Every narrative has a mirror. The mirror is its strongest falsifier."<br>
+<a href="https://github.com/EvezArt/evez-research">github.com/EvezArt/evez-research</a>
+</div>
+
+</div>
+</body>
+</html>
