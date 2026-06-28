@@ -35,7 +35,7 @@ This testimony emerges in the context of the EVEZ investigation into:
 
 2. **Geographic clustering:** Both incidents occur along the I-80 corridor in Wyoming — the same corridor where:
    - Hundreds of elk were found dead (Feb/March 2023)
-   - Steven was employed by Union Pacific as a minor (~17 years old)
+   - Steven was employed by Union Pacific as a conductor (age 22 at time of March 2023 exposure)
    - The Ogden derailment released cyclohexane and magnesium chloride (March 2, 2023)
 
 3. **Institutional violence:** Police brutality causing brain injury during imprisonment suggests:

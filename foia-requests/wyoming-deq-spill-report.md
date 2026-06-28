@@ -40,7 +40,7 @@ In late February/early March 2023, a chemical plume from a Union Pacific train d
 ## Reporter
 
 Steven Crawford-Maggard
-Former UP conductor (minor at time of exposure)
+Former UP conductor (age 22 at time of exposure)
 Resident: Fort Bridger, WY 82919 (directly in plume corridor)
 Email: fiersteity@gmail.com
 Phone: 307-677-5504 (text only)

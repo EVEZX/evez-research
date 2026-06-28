@@ -18,7 +18,7 @@
 
 ### Key Elements of This Tweet:
 1. **"Mojave predictions"** — Steven claims to have made predictions while in the Mojave desert
-2. **"when I was 17"** — He was 17 years old at the time (not 2023 — this was years earlier)
+2. **"when I was 17"** — He was 17 years old circa 2018 (born January 15, 2001; he was 22 in February 2023). The predictions were made years before the 2023 UP exposure.
 3. **"train derailing"** — He mentions a train derailment he witnessed/took a picture of
 4. **"Laughin/Bullhead"** — Laughlin, NV / Bullhead City, AZ area (on the Colorado River)
 5. **"2/23"** — This date reference is ambiguous: could mean February 2023, or February 23rd of an unspecified year

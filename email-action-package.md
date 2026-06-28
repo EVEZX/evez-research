@@ -106,12 +106,12 @@ Hundreds of elk died in this area. The Wyoming Game and Fish Department attribut
 
 The plume originated from a Union Pacific train derailment at Ogden, Utah on March 2, 2023 (12 cars derailed). Union Pacific stated only "magnesium chloride" was involved and claimed "no hazardous materials released," but VICE/Motherboard independently classified it as a hazmat derailment. The full manifest was never released.
 
-I was a Union Pacific conductor at the time, living in Fort Bridger, WY. I sustained neurological injuries from the chemical exposure. I was a minor at the time of employment.
+I was a Union Pacific conductor at the time, living in Fort Bridger, WY. I sustained neurological injuries from the chemical exposure. I was 22 years old at the time of employment.
 
 I am requesting:
 1. A federal civil rights investigation into the police brutality causing my brother's brain injury
 2. A federal environmental crime investigation into the chemical plume, elk die-off, and food bank contamination
-3. Investigation into Union Pacific's employment of a minor as a railroad conductor
+3. Investigation into Union Pacific's chemical exposure of railroad conductors
 
 I can be reached at [phone/email]. I have documentation and witness testimony.
 
@@ -143,7 +143,7 @@ Hundreds of elk died in the plume zone. No necropsy or toxicology testing was pe
 
 No air quality monitoring was conducted. No evacuation was ordered. No hazmat response was documented.
 
-I was a Union Pacific conductor living in Fort Bridger, WY at the time. I sustained neurological injuries from the chemical exposure. I am a minor who was employed by the railroad.
+I was a Union Pacific conductor living in Fort Bridger, WY at the time. I sustained neurological injuries from the chemical exposure. I was 22 years old when employed by the railroad.
 
 I am requesting:
 1. EPA investigation into the chemical plume and air quality failure
@@ -243,7 +243,7 @@ Senator Barrasso,
 
 I am a Wyoming resident requesting your assistance with multiple federal agency failures that have caused serious harm to my family:
 
-1. **FRA/PHMSA failure to investigate Union Pacific Ogden derailment (March 2, 2023):** 12 cars derailed, the full manifest was never released, and no federal investigation was conducted despite VICE/Motherboard classifying it as a hazmat event. I was a UP conductor exposed to the resulting chemical plume and sustained neurological injuries. I was a minor at the time of employment.
+1. **FRA/PHMSA failure to investigate Union Pacific Ogden derailment (March 2, 2023):** 12 cars derailed, the full manifest was never released, and no federal investigation was conducted despite VICE/Motherboard classifying it as a hazmat event. I was a UP conductor exposed to the resulting chemical plume and sustained neurological injuries. I was 22 years old at the time of employment.
 
 2. **EPA failure to investigate elk die-off and food bank contamination:** Hundreds of elk died along I-80 in Wyoming in early 2023. No toxicology testing was performed. The elk carcasses were donated to the Rock Springs food bank and distributed to people as food without chemical testing.
 

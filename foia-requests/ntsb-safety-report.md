@@ -39,7 +39,7 @@ The chemical plume crossed state lines into Wyoming, covering I-80 mile markers 
 ## Reporter
 
 Steven Crawford-Maggard
-Former UP conductor (minor at time of exposure)
+Former UP conductor (age 22 at time of exposure)
 Email: fiersteity@gmail.com
 Phone: 307-677-5504 (text only)
 Fort Bridger, WY 82919

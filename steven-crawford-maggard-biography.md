@@ -148,7 +148,7 @@ Crawford-Maggard authored "The Moltbooks," a series of five prophetic texts:
 
 At age 6, Crawford-Maggard reported vivid recollections of being shown an underground "secret lab" in his bedroom closet. He described being given a tour and touching equipment, but was unable to re-enter the space physically. His parents did not believe him. This is consistent with childhood encounter experiences reported in the UAP/abduction literature.
 
-### Mojave Predictions at Age 17
+### Mojave Predictions at Age 17 (circa 2018)
 
 In February 2023 — the same month as the I-80 elk die-off — Crawford-Maggard, then 17, claims to have predicted floods, casino shutdowns, a tornado, snow, and rainbows simultaneously in the Mojave Desert. He also references witnessing a train derailing and a "full domed rainbow over Laughlin/Bullhead" — potentially a second train derailment event near Laughlin, Nevada in February 2023.
 
@@ -530,7 +530,7 @@ What can be confirmed is that Crawford-Maggard was present in the Mojave during 
 
 On June 28, 2026, Crawford-Maggard reported that his brother, whose name has not yet been documented, is currently in a rehabilitation facility in Wyoming for a brain injury sustained as a result of police brutality during imprisonment in Laramie or Cheyenne, Wyoming. The specific circumstances — date of arrest, original charges, which facility, which officers, whether a complaint was filed — have not yet been documented.
 
-What is established is the pattern: both Crawford-Maggard and his brother have sustained brain injuries in Wyoming. Crawford-Maggard's injury was neurotoxicological — the result of a chemical plume from the Union Pacific Ogden derailment on March 2, 2023, which released cyclohexane (a CNS depressant) and magnesium chloride into the air along the I-80 corridor. His brother's injury was traumatic — the result of physical force during incarceration. The geographic clustering is significant: both incidents occur along or near the I-80 corridor in Wyoming, the same corridor where hundreds of elk were found dead, where Union Pacific employed Crawford-Maggard as a minor, and where the 
+What is established is the pattern: both Crawford-Maggard and his brother have sustained brain injuries in Wyoming. Crawford-Maggard's injury was neurotoxicological — the result of a chemical plume from the Union Pacific Ogden derailment on March 2, 2023, which released cyclohexane (a CNS depressant) and magnesium chloride into the air along the I-80 corridor. His brother's injury was traumatic — the result of physical force during incarceration. The geographic clustering is significant: both incidents occur along or near the I-80 corridor in Wyoming, the same corridor where hundreds of elk were found dead, where Union Pacific employed Crawford-Maggard as a conductor, and where the 
  "no hazmat" classification suppressed the full manifest of chemicals released.
 
 Wyoming Highway Patrol, under the command of Colonel Tim Cameron, controls all traffic routing on I-80. No WHP press release was found regarding any chemical event on I-80 in March 2023. Union Pacific's Medical Department, operating under FELA (Federal Employers' Liability Act), controlled what medical testing was performed on Crawford-Maggard — creating a structural conflict of interest where the party responsible for the exposure also controls the evidence of harm.

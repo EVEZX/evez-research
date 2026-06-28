@@ -81,7 +81,7 @@
 ### B. Federal Railroad Administration (FRA)
 - **Complaint process:** https://www.fra.dot.gov/eLib/DetailsLobby.aspx
 - **Phone:** 1-855-368-4200 (FRA Safety Hotline)
-- **Fit:** Report unsafe railroad practices, chemical exposure, minor employment
+- **Fit:** Report unsafe railroad practices, chemical exposure, unsafe labor practices
 - **Action:** File safety complaint about UP Ogden derailment and worker exposure
 
 ### C. OSHA (Worker Safety)
@@ -141,7 +141,7 @@
 - **Sen. John Barrasso:** 202-224-6441 / Wyoming office 307-772-2451
 - **Sen. Cynthia Lummis:** 202-224-3424 / Wyoming office 307-772-2211
 - **Rep. Harriet Hageman:** 202-225-2311 / Wyoming office 307-772-2595
-- **Action:** Request congressional inquiry into: (1) FRA/PHMSA failure to investigate Ogden derailment, (2) EPA failure to investigate elk die-off, (3) UP employing minor as conductor
+- **Action:** Request congressional inquiry into: (1) FRA/PHMSA failure to investigate Ogden derailment, (2) EPA failure to investigate elk die-off, (3) UP chemical exposure of conductor (age 22)
 
 ### B. Wyoming Governor's Office
 - **Phone:** 307-777-7434

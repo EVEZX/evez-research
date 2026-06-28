@@ -68,7 +68,7 @@
 
 ---
 
-## 6. Mojave Predictions at Age 17 — February 2023
+## 6. Mojave Predictions at Age 17 (circa 2018, referenced in Feb 2023 tweet)
 
 **Tweet 1837238147677356277 — 2024-09-20 21:11:23**
 > @OldVetSymposium I predicted floods, casino shutdowns a tornado, snow, & rainbows all at the same time.. in the Mojave when I was 17.
@@ -79,7 +79,7 @@
 
 This is potentially a second derailment event in the same month as the I-80 events. Laughlin/Bullhead City is on the I-40 corridor, south of the I-80 corridor. The "full domed rainbow" could be a chemical or atmospheric anomaly associated with the derailment.
 
-**Note:** Steven was 17 in February 2023. If his current age is ~20-21 (based on digital identity created March 2023), he may have been a minor when employed by Union Pacific. This raises questions about his actual age and the timeline of events.
+**Note:** Steven was born January 15, 2001. He was 22 years old in February 2023 — NOT 17 and NOT a minor. The "when I was 17" tweet refers to events from circa 2018.
 
 ---
 

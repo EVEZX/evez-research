@@ -150,7 +150,7 @@ All locations mentioned across all reports, organized by the I-80 corridor:
 | **Skinwalker Ranch, UT** | ~30 min from I-80 corridor; r=+0.93 correlation with I-80 event in eigenforensic matrix | Biography |
 | **Craig Hospital, Englewood, CO** | Premier Rocky Mountain TBI rehab; Wyoming's primary out-of-state TBI referral | Brain Injury Rehab |
 | **Palm Springs, CA** | Steven's current location (as of Sept 2024) | Biography |
-| **Laughlin/Bullhead City, NV** | Steven lived here; Mojave predictions (age 17); possible undocumented train derailment | Biography, CAIN |
+| **Laughlin/Bullhead City, NV** | Steven lived here; Mojave predictions at age 17 (~2018); possible undocumented train derailment | Biography, CAIN |
 | **Spirit Mountain, NV** | Avi Kwa Ame; Steven's 2.5-hour missing time experience | Biography, CAIN |
 
 ### 1D. Convergence Summary — Where Separate Threads Meet

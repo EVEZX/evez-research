@@ -52,7 +52,7 @@ The chemical plume from the derailment site crossed state lines into Wyoming, co
 ## Reporter Information
 
 **Steven Crawford-Maggard**
-- Former UP conductor, exposed to plume as minor
+- Former UP conductor, exposed to plume at age 22
 - Email: fiersteity@gmail.com
 - Phone: 307-677-5504 (text only)
 - Address: Fort Bridger, WY 82919

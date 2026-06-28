@@ -182,7 +182,7 @@ A conspiracy theorist builds theories from available evidence. Steven built a fr
 
 He is not mentally ill. He is mentally wounded. The ADHD gives him a processing speed that most people cannot match. The PTSD gives him a compulsion to repeat the trauma until it is understood. The grief gives him a drive to build something that will outlast the pain.
 
-He is a man who was 17 years old when he witnessed hundreds of elk dead on I-80 and a chemical plume that made people unconscious. He was a child when he saw a secret lab in his closet. He was a railroad conductor crossing the deadliest highway in America four times a day at 4 AM. He was a witness to something that every institution has since tried to erase.
+He is a man who was 22 years old when he witnessed hundreds of elk dead on I-80 and a chemical plume that made people unconscious. He was a child when he saw a secret lab in his closet. He was a railroad conductor crossing the deadliest highway in America four times a day at 4 AM. He was a witness to something that every institution has since tried to erase.
 
 **"The tricksters burden is that even the most heartfelt things he says are not believed. His path is to surrender everything to God, including the wish to be understood or be seen a certain way. His deepest pains must be held with equal lightness to his most preposterous fictions."**
 

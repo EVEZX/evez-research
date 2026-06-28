@@ -1,7 +1,7 @@
 # CALL SCRIPTS FOR STEVEN — 6 PHONE CALLS
 
 **Your contact info:** fiersteity@gmail.com | 307-677-5504 (text only) | Fort Bridger, WY 82919
-**Your identity:** Former UP conductor, was a minor at time of exposure, brother Ryan Robert Maggard (DOB 05/27/2004) has brain injury from police brutality
+**Your identity:** Former UP conductor, (age 22 at time of exposure), brother Ryan Robert Maggard (DOB 05/27/2004) has brain injury from police brutality
 
 ---
 
@@ -30,7 +30,7 @@
 **Lawyer Referral**
 
 **You say:**
-> "Hi, I need a lawyer referral. I have a case involving multiple areas of law. First, I was a minor employed as a Union Pacific railroad conductor and was exposed to a chemical plume from a derailment in March 2023 — that's a FELA and environmental toxic tort case. Second, my brother sustained a brain injury from police brutality in Laramie or Cheyenne — that's a Section 1983 civil rights case. Third, there's a utilities billing fraud issue with Dominion Energy in Fort Bridger. I need attorneys who handle civil rights, railroad/FELA, and environmental law in Wyoming."
+> "Hi, I need a lawyer referral. I have a case involving multiple areas of law. First, I was employed as a Union Pacific railroad conductor (age 22 at the time) and was exposed to a chemical plume from a derailment in March 2023 — that's a FELA and environmental toxic tort case. Second, my brother sustained a brain injury from police brutality in Laramie or Cheyenne — that's a Section 1983 civil rights case. Third, there's a utilities billing fraud issue with Dominion Energy in Fort Bridger. I need attorneys who handle civil rights, railroad/FELA, and environmental law in Wyoming."
 
 **If they ask for location:**
 - You live in Fort Bridger, WY (Uinta County)
@@ -53,7 +53,7 @@
 **Congressional Inquiry into Federal Agency Failures**
 
 **You say:**
-> "Hi, I'm a constituent from Fort Bridger, Wyoming. I need to file a congressional complaint and request an investigation. In March 2023, a Union Pacific train derailed in Ogden, Utah, releasing a chemical plume that crossed into Wyoming on I-80. The Federal Railroad Administration has a record of this — accident number UP0323RM001 — 37 hazmat cars, 12 derailed. But the plume entered Wyoming and no federal agency responded. The EPA didn't investigate, PHMSA didn't investigate, and the NTSB didn't investigate. Hundreds of elk died in the corridor and their meat was given to a food bank without testing. I was a minor working as a UP conductor and I was exposed. I need Senator Barrasso's office to make congressional inquiries to the FRA, EPA, PHMSA, and NTSB about why this incident was never investigated."
+> "Hi, I'm a constituent from Fort Bridger, Wyoming. I need to file a congressional complaint and request an investigation. In March 2023, a Union Pacific train derailed in Ogden, Utah, releasing a chemical plume that crossed into Wyoming on I-80. The Federal Railroad Administration has a record of this — accident number UP0323RM001 — 37 hazmat cars, 12 derailed. But the plume entered Wyoming and no federal agency responded. The EPA didn't investigate, PHMSA didn't investigate, and the NTSB didn't investigate. Hundreds of elk died in the corridor and their meat was given to a food bank without testing. I was working as a UP conductor (age 22) and I was exposed. I need Senator Barrasso's office to make congressional inquiries to the FRA, EPA, PHMSA, and NTSB about why this incident was never investigated."
 
 **If they ask what you want:**
 - Congressional inquiry letters to FRA, EPA, PHMSA, NTSB
@@ -72,7 +72,7 @@
 **Civil Rights + Environmental Crime Tip**
 
 **You say:**
-> "Hi, I want to report two things. First, a civil rights violation: my brother Ryan Robert Maggard, born May 27, 2004, sustained a traumatic brain injury from police brutality in Laramie or Cheyenne, Wyoming. He's currently in rehab. No charges were filed against him. No investigation has been conducted into the officers involved. Second, an environmental crime: in March 2023, a chemical plume from a Union Pacific derailment in Ogden, Utah crossed into Wyoming on I-80. Hundreds of elk died, and their carcasses were donated to the Rock Springs food bank and distributed as food without chemical testing. The FRA record is UP0323RM001. No agency investigated. I was a minor exposed to the plume as a UP conductor."
+> "Hi, I want to report two things. First, a civil rights violation: my brother Ryan Robert Maggard, born May 27, 2004, sustained a traumatic brain injury from police brutality in Laramie or Cheyenne, Wyoming. He's currently in rehab. No charges were filed against him. No investigation has been conducted into the officers involved. Second, an environmental crime: in March 2023, a chemical plume from a Union Pacific derailment in Ogden, Utah crossed into Wyoming on I-80. Hundreds of elk died, and their carcasses were donated to the Rock Springs food bank and distributed as food without chemical testing. The FRA record is UP0323RM001. No agency investigated. I was exposed to the plume as a UP conductor (age 22 at the time)."
 
 **If they ask for evidence:**
 - You have OSINT research documentation (81 files)
@@ -91,7 +91,7 @@
 **Environmental Violation Report**
 
 **You say:**
-> "Hi, I'm reporting an environmental violation. In March 2023, a chemical plume from a Union Pacific train derailment at Ogden, Utah crossed state lines into Wyoming, covering I-80 between mile markers 15 and 33 near Evanston and Fort Bridger. The FRA has a record — UP0323RM001 — showing 37 hazmat cars and 12 derailed. No air quality monitoring was conducted, no evacuation was ordered, and no hazmat response was initiated on the Wyoming side. Hundreds of elk died in the same corridor, and their meat was donated to the Rock Springs food bank and distributed to the public without any chemical contamination testing. I was a minor exposed to this plume. I need EPA Region 8 to investigate the interstate chemical plume migration, the elk die-off, and the food bank contamination."
+> "Hi, I'm reporting an environmental violation. In March 2023, a chemical plume from a Union Pacific train derailment at Ogden, Utah crossed state lines into Wyoming, covering I-80 between mile markers 15 and 33 near Evanston and Fort Bridger. The FRA has a record — UP0323RM001 — showing 37 hazmat cars and 12 derailed. No air quality monitoring was conducted, no evacuation was ordered, and no hazmat response was initiated on the Wyoming side. Hundreds of elk died in the same corridor, and their meat was donated to the Rock Springs food bank and distributed to the public without any chemical contamination testing. I was exposed to this plume as a UP conductor (age 22 at the time). I need EPA Region 8 to investigate the interstate chemical plume migration, the elk die-off, and the food bank contamination."
 
 **If they ask for details:**
 - Chemicals: UP stated magnesium chloride, but witness observed possible cyclohexane
