@@ -1,0 +1,61 @@
+EVEZ SPECTRAL OSINT REPORT v2.0.0
+============================================================
+Generated: 2026-06-29T02:16:07.117699
+Entities: 1211
+Relationships: 186897
+Graph Density: 0.2551
+Clustering Coefficient: 0.1227
+
+SPECTRAL ANALYSIS
+------------------------------------------------------------
+Dominant Eigenvalue: 1.0000
+Spectral Gap: 0.0000
+Suppression Coefficient: 0.0000
+Spectral Class: O
+Eigenvalues: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+TOP SUSPICION NETWORK
+------------------------------------------------------------
+  Union Pacific                            9.2037
+  NTSB                                     7.8959
+  EVEZ                                     7.6765
+  OSINT                                    7.1271
+  PHMSA                                    7.1027
+  Uinta County                             6.4335
+  FOIA                                     6.4267
+  CAPTCHA                                  4.5136
+  Pacific Railroad                         4.4100
+  VICE                                     4.1428
+  AEMDAS                                   4.0491
+  Ogden, Utah                              3.7292
+  Evanston, Wyoming                        3.2826
+  SUMMARY                                  3.1761
+  SPECTRAL                                 3.0969
+  WHP                                      2.9090
+  EVIDENCE                                 2.9006
+  HTML                                     2.8282
+  NONE                                     2.8129
+  FINDING                                  2.7445
+
+ANOMALIES (5)
+------------------------------------------------------------
+  [HIGH] suspicious_central_entity: WYOMING has high centrality (0.1525) AND high suspicion (1.760)
+  [HIGH] suspicious_central_entity: WITH has high centrality (0.1347) AND high suspicion (0.740)
+  [HIGH] suspicious_central_entity: STEVEN has high centrality (0.1283) AND high suspicion (0.710)
+  [HIGH] suspicious_central_entity: FROM has high centrality (0.1282) AND high suspicion (0.820)
+  [HIGH] suspicious_central_entity: STATE has high centrality (0.1263) AND high suspicion (1.060)
+
+PREDICTIONS (3)
+------------------------------------------------------------
+  [31%] WYOMING is a key node requiring investigation
+      Evidence: Centrality 0.1525, suspicion 1.760
+      Action: Pull all records on WYOMING — cross-reference with suppression events
+  [27%] WITH is a key node requiring investigation
+      Evidence: Centrality 0.1347, suspicion 0.740
+      Action: Pull all records on WITH — cross-reference with suppression events
+  [26%] STEVEN is a key node requiring investigation
+      Evidence: Centrality 0.1283, suspicion 0.710
+      Action: Pull all records on STEVEN — cross-reference with suppression events
+
+Phi=0.973  eta*=0.03  r=0.45
+EVEZ Spectral OSINT — by Steven Crawford-Maggard

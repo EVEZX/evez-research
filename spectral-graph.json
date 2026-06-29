@@ -1,0 +1,352 @@
+{
+  "nodes": [
+    {
+      "id": "2095e294c251",
+      "name": "EVEZ",
+      "type": "Person",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "87c67bcf162e",
+      "name": "Ryan Maggard",
+      "type": "Person",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "f368e07c8030",
+      "name": "Saloga",
+      "type": "Person",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "7d02c4041692",
+      "name": "Dunsmore",
+      "type": "Person",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "fd4ba7a2824c",
+      "name": "Greenstreet",
+      "type": "Person",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "c46eb1a2f130",
+      "name": "Union Pacific",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "cab44b4fa136",
+      "name": "EPD",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "bf741fe85901",
+      "name": "WGFD",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "f73e0624df3a",
+      "name": "WHP",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "d05e98e8262a",
+      "name": "NTSB",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "5c4b681856d7",
+      "name": "PHMSA",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "04838142be54",
+      "name": "AARO",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "bfd89de5ee20",
+      "name": "EVEZ",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "cab7330a5849",
+      "name": "ACLU",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "68bde6874595",
+      "name": "FBI",
+      "type": "Organization",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "cf05208c513b",
+      "name": "Evanston, Wyoming",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "bba6f3cbc318",
+      "name": "Fort Bridger, Wyoming",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "48324d82c965",
+      "name": "Ogden, Utah",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "218ccfdcf2d8",
+      "name": "Rock Springs, Wyoming",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "6f3351067071",
+      "name": "I-80",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "d8d21d264aeb",
+      "name": "I-80 MM 15",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "1ab0c511915b",
+      "name": "I-80 MM 33",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "984978265f36",
+      "name": "Wyoming",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "1c32288610c5",
+      "name": "Uinta County",
+      "type": "Location",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "c3ff7221f86e",
+      "name": "Vinyl Chloride",
+      "type": "Chemical",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "97dfffd14fa1",
+      "name": "Phosgene",
+      "type": "Chemical",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "a876cfc60841",
+      "name": "Benzene",
+      "type": "Chemical",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "bd5b719212ed",
+      "name": "Formaldehyde",
+      "type": "Chemical",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "61ba5cd3d112",
+      "name": "2023 Train Derailment",
+      "type": "Event",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "7356fe0a4e15",
+      "name": "Elk Mortality Event",
+      "type": "Event",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    },
+    {
+      "id": "633e82fb90cb",
+      "name": "Dunsmore v. State",
+      "type": "Document",
+      "suspicion": 0.0,
+      "centrality": 0.0,
+      "sources": 1,
+      "color": "#44aaff",
+      "size": 5.0,
+      "crime_probs": {}
+    }
+  ],
+  "links": [],
+  "meta": {
+    "entities": 31,
+    "links": 0,
+    "version": "2.0.0",
+    "timestamp": "2026-06-29T02:16:44.515512"
+  }
+}
