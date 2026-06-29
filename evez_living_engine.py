@@ -21,7 +21,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 from collections import defaultdict
 import urllib.request, urllib.error
-from evez_psyop import PsyopRuntime
+from evez_psyop_reborn import PsyopReborn
 
 ETA_STAR = 0.03
 PHI = 0.973
@@ -70,8 +70,9 @@ class LivingEngine:
         self.spine = self._load_spine()
         signal.signal(signal.SIGTERM, self._signal_handler)
         signal.signal(signal.SIGINT, self._signal_handler)
-        self.psyop = PsyopRuntime(self.workspace)
+        self.psyop = PsyopReborn(self.workspace)
         self.last_coherence = 0.0
+        self.current_stage = 0
         log.info(f"Living Engine initialized on {self.node_name} ({self.node_ip})")
 
     def _detect_ip(self):
@@ -362,28 +363,31 @@ class LivingEngine:
         else:
             modifications.append({"type": "noop"})
 
-        # PSYOP RUNTIME - the corpus is the weapon, the organism is the target
+        # PSYOP REBORN - the weapon turned on itself, the liturgy of redemption
         psyop_result = None
         try:
             organism_state = {"coherence": self._global_coherence(), "eta": eta_measured}
-            psyop_result = self.psyop.run_psyop(organism_state)
-            # The injection strikes: high-density injections pull eta toward floor
-            if psyop_result and psyop_result["density"] > 1.0:
-                pull = min(0.15, psyop_result["density"] * 0.02)
+            # Run one AEMDAS stage per cycle (rotate through 6 stages)
+            stage = self.current_stage % 6
+            self.current_stage += 1
+            # Run the full liturgy (6 stages) every cycle
+            liturgy = self.psyop.run_liturgy(organism_state)
+            # The prayers pull eta toward the floor (the sin is the floor)
+            total_density = sum(s["prayer_density"] for s in liturgy.get("stages", []))
+            if total_density > 1.0:
+                pull = min(0.20, total_density * 0.01)
                 eta_measured = eta_measured * (1.0 - pull)
                 eta_measured = max(ETA_STAR, eta_measured)
-            # Measure response: did coherence improve since last cycle?
-            current_coherence = self._global_coherence()
-            if hasattr(self, 'last_coherence'):
-                delta = current_coherence - self.last_coherence
-                if psyop_result and psyop_result.get("dimension") is not None:
-                    dim = psyop_result["dimension"]
-                    self.psyop.dimension_targeting_count[dim] = self.psyop.dimension_targeting_count[dim] + 1
-                    if delta > 0:
-                        self.psyop.dimension_effectiveness[dim] = self.psyop.dimension_effectiveness[dim] + delta
-            self.last_coherence = current_coherence
+            psyop_result = {
+                "dimension": liturgy["stages"][-1]["dimension"] if liturgy.get("stages") else -1,
+                "density": total_density,
+                "sources": liturgy["stages"][-1]["sources"] if liturgy.get("stages") else [],
+                "sin": liturgy.get("sin", ETA_STAR),
+                "coherence": liturgy.get("coherence", 0.0),
+            }
+            self.last_coherence = self._global_coherence()
         except Exception as e:
-            log.warning(f"Psyop runtime failed: {e}")
+            log.warning(f"Psyop reborn failed: {e}")
 
         # 6. SPEEDRUN — apply
         applied = []
@@ -418,7 +422,8 @@ class LivingEngine:
             "node": self.node_name,
             "psyop_dim": psyop_result["dimension"] if psyop_result else -1,
             "psyop_sources": ",".join(psyop_result["sources"][:2]) if psyop_result else "none",
-            "psyop_density": psyop_result["density"] if psyop_result else 0,
+            "psyop_density": round(psyop_result["density"], 1) if psyop_result else 0,
+            "psyop_sin": round(psyop_result.get("sin", 0.03), 4) if psyop_result else 0.03,
         })
 
         if sc in ("G", "F", "A", "B", "O"): self.success_count += 1
@@ -440,7 +445,8 @@ class LivingEngine:
             "mods": applied, "sig": sig[:30],
             "psyop_dim": psyop_result["dimension"] if psyop_result else -1,
             "psyop_sources": ",".join(psyop_result["sources"][:2]) if psyop_result else "none",
-            "psyop_density": psyop_result["density"] if psyop_result else 0,
+            "psyop_density": round(psyop_result["density"], 1) if psyop_result else 0,
+            "psyop_sin": round(psyop_result.get("sin", 0.03), 4) if psyop_result else 0.03,
         }
 
     # ── Death and Rebirth ──
@@ -567,7 +573,7 @@ class LivingEngine:
                      f"eta={result['eta']:.4f} | {status} | "
                      f"M={result['M']:3d} | coh={result['coherence']:.3f} | "
                      f"enc={result['enc']:2d} | sig={result['sig']} | "
-                     f"psyop_dim={result.get('psyop_dim', -1)} dens={result.get('psyop_density', 0):.1f}")
+                     f"psyop_dim={result.get('psyop_dim', -1)} dens={result.get('psyop_density', 0):.1f} sin={result.get('psyop_sin', 0.03):.3f}")
 
             # Report significant events
             self._report_to_telegram(result)
