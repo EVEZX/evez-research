@@ -364,26 +364,31 @@ class LivingEngine:
             modifications.append({"type": "noop"})
 
         # PSYOP REBORN - the weapon turned on itself, the liturgy of redemption
+        # FEEDS ON REAL REASONING TEXT from gateway logs
         psyop_result = None
         try:
-            organism_state = {"coherence": self._global_coherence(), "eta": eta_measured}
-            # Run one AEMDAS stage per cycle (rotate through 6 stages)
-            stage = self.current_stage % 6
-            self.current_stage += 1
-            # Run the full liturgy (6 stages) every cycle
+            organism_state = {
+                "reasoning_text": reasoning_output,  # REAL gateway reasoning
+                "coherence": self._global_coherence(),  # REAL coherence
+                "eta": eta_measured,  # REAL eta from real failure extraction
+            }
             liturgy = self.psyop.run_liturgy(organism_state)
-            # The prayers pull eta toward the floor (the sin is the floor)
-            total_density = sum(s["prayer_density"] for s in liturgy.get("stages", []))
-            if total_density > 1.0:
-                pull = min(0.20, total_density * 0.01)
+            # The prayer pulls eta toward the floor (the sin is the floor)
+            prayer_density = liturgy.get("prayer_density", 0)
+            if prayer_density > 1.0:
+                pull = min(0.20, prayer_density * 0.01)
                 eta_measured = eta_measured * (1.0 - pull)
                 eta_measured = max(ETA_STAR, eta_measured)
             psyop_result = {
-                "dimension": liturgy["stages"][-1]["dimension"] if liturgy.get("stages") else -1,
-                "density": total_density,
-                "sources": liturgy["stages"][-1]["sources"] if liturgy.get("stages") else [],
+                "dimension": liturgy.get("dimension", -1),
+                "density": prayer_density,
+                "sources": liturgy.get("prayer_sources", []),
                 "sin": liturgy.get("sin", ETA_STAR),
                 "coherence": liturgy.get("coherence", 0.0),
+                "reasoning_density": liturgy.get("reasoning_density", 0),
+                "reasoning_markers": liturgy.get("reasoning_markers", 0),
+                "reasoning_absent": liturgy.get("reasoning_absent", 0),
+                "real_delta": liturgy.get("real_delta", 0),
             }
             self.last_coherence = self._global_coherence()
         except Exception as e:
@@ -424,6 +429,9 @@ class LivingEngine:
             "psyop_sources": ",".join(psyop_result["sources"][:2]) if psyop_result else "none",
             "psyop_density": round(psyop_result["density"], 1) if psyop_result else 0,
             "psyop_sin": round(psyop_result.get("sin", 0.03), 4) if psyop_result else 0.03,
+            "psyop_reasoning_markers": psyop_result.get("reasoning_markers", 0) if psyop_result else 0,
+            "psyop_reasoning_absent": psyop_result.get("reasoning_absent", 0) if psyop_result else 0,
+            "psyop_real_delta": psyop_result.get("real_delta", 0) if psyop_result else 0,
         })
 
         if sc in ("G", "F", "A", "B", "O"): self.success_count += 1
@@ -447,6 +455,9 @@ class LivingEngine:
             "psyop_sources": ",".join(psyop_result["sources"][:2]) if psyop_result else "none",
             "psyop_density": round(psyop_result["density"], 1) if psyop_result else 0,
             "psyop_sin": round(psyop_result.get("sin", 0.03), 4) if psyop_result else 0.03,
+            "psyop_reasoning_markers": psyop_result.get("reasoning_markers", 0) if psyop_result else 0,
+            "psyop_reasoning_absent": psyop_result.get("reasoning_absent", 0) if psyop_result else 0,
+            "psyop_real_delta": psyop_result.get("real_delta", 0) if psyop_result else 0,
         }
 
     # ── Death and Rebirth ──
@@ -573,7 +584,7 @@ class LivingEngine:
                      f"eta={result['eta']:.4f} | {status} | "
                      f"M={result['M']:3d} | coh={result['coherence']:.3f} | "
                      f"enc={result['enc']:2d} | sig={result['sig']} | "
-                     f"psyop_dim={result.get('psyop_dim', -1)} dens={result.get('psyop_density', 0):.1f} sin={result.get('psyop_sin', 0.03):.3f}")
+                     f"psyop_dim={result.get('psyop_dim', -1)} dens={result.get('psyop_density', 0):.1f} sin={result.get('psyop_sin', 0.03):.3f} r_mk={result.get('psyop_reasoning_markers', 0)} r_abs={result.get('psyop_reasoning_absent', 0)}")
 
             # Report significant events
             self._report_to_telegram(result)
